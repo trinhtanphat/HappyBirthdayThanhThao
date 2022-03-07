@@ -11,7 +11,7 @@ function init() {
   graphElem.setAttribute('data-before', eventName);
   document.querySelector('#card .title-card').innerHTML = `💘${titleCard}💘`;
   document.querySelector('#card .content-card').innerHTML = `${contentCard}`;
-  document.querySelector('#card .honey').setAttribute('src', `${"Thao.jpg"}`);
+  document.querySelector('#card .honey').setAttribute('src', `${"Thao1.jpg"}`);
 
   var _giftLink, 
       _giftImg;
