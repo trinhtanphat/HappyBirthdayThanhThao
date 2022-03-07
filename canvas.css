@@ -1,0 +1,56 @@
+
+  canvas {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* video {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+ */
+ /* video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+} */
+#video {
+  position:fixed;
+  z-index: -1;
+/*not work if the screen ratio is below 16/9*/
+  width:100%;     
+  height: auto;
+}
+
+html,body {
+  width:100vw;
+  height: 100vh;
+  margin: 0;
+}
+#video {
+  position:fixed;
+  z-index: -1;
+  margin-left: 50vw;
+  transform: translate(-50%);
+}
+@media (min-aspect-ratio: 16/9) {
+  #video {
+      width:auto;
+      height: auto;
+      align-self: center;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video { 
+      width:auto;
+      height: auto;
+      align-self: center;
+  }
+}
